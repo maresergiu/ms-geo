@@ -85,13 +85,14 @@ export default {
             this.triggerValidation++
         },
         generateRandomNumber (range){
+            console.log(range)
             this.randomNumber = Math.floor(Math.random() * range);
         }
     },
     mounted (){
         axios.get('https://restcountries.eu/rest/v2/all')
         .then(response => {
-          this.generateRandomNumber(this.capitalCities.length)
+          this.generateRandomNumber(response.data.length)
           this.capitalCities = response.data
         })
         .catch(() => {
