@@ -81,8 +81,6 @@ export default {
 
             this.inputErrors = validation.error ? [...validation.error.details] : []
 
-            console.log(this.inputErrors)
-
             this.updateApplication(validation, objToValidate)
         },
         updateApplication (validation, validatedObj) {
