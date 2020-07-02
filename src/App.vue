@@ -85,7 +85,6 @@ export default {
             this.triggerValidation++
         },
         generateRandomNumber (range){
-            console.log(range)
             this.randomNumber = Math.floor(Math.random() * range);
         }
     },
