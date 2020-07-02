@@ -77,7 +77,7 @@ export default {
             this.formErros.push(obj)
         },
         handleValidInput (obj) {
-            if(obj.value.toLowerCase() !== this.capitalCities[this.randomNumber].capital.toLowerCase()){
+            if(obj.value.toLowerCase() === this.capitalCities[this.randomNumber].capital.toLowerCase()){
                 this.finalResult = `Final result is ${this.capitalCities[this.randomNumber].capital.toLowerCase()}`
             }
         },
