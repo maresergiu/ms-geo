@@ -8,7 +8,7 @@ const jsValidationSchema = Joi.object({
 
 // custom error messages
 const customErrorMessages = {
-    'any.empty': 'Please input a value'
+    'string.empty': 'Please input a value'
 }
 
 export default {
