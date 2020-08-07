@@ -30,6 +30,15 @@ body {
     margin: 0 auto;
 }
 
+// spacing
+.mod {
+    padding-top: 40px;
+}
+
+.mod:last-child {
+    padding-bottom: 40px;
+}
+
 // font, text and titles
 .text {
     margin: 0;

@@ -84,7 +84,6 @@ export default {
             this.updateApplication(validation, objToValidate)
         },
         updateApplication (validation, validatedObj) {
-            console.log(validation, validatedObj)
             if(validation.error) {
                 this.$emit('emittedErrorInput', {
                     name: this.inputName,
